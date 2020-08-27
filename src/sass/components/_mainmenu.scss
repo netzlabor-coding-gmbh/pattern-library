@@ -1,0 +1,61 @@
+.c-mainmenu {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__meta {
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        padding: 15px;
+        border-bottom: 1px solid rgba($border-color, 0.5);
+    }
+
+    &__list {
+        @include list-unstyled();
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        border-bottom: 1px solid rgba($border-color, 0.5);
+        padding: 0 15px;
+
+        @include media-breakpoint-up(md) {
+            border-bottom: none;
+            padding: 0;
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        padding: 20px 0;
+        font-weight: 500;
+
+
+        @include media-breakpoint-up(md) {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        &--is-active {
+            color: $secondary;
+        }
+    }
+
+    &__item:first-child &__link {
+        @include media-breakpoint-up(md) {
+            padding-left: 0;
+        }
+    }
+}

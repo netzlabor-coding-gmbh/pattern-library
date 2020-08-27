@@ -1,0 +1,22 @@
+.c-metamenu {
+    display: flex;
+    justify-content: flex-end;
+
+    &__links {
+        a {
+            padding: 15px 50px 15px 0;
+        }
+    }
+
+    &__language {
+        a {
+            padding-left: 5px;
+
+            &:not(:last-child) {
+                border-right: 2px solid gray;
+                padding-right: 5px;
+
+            }
+        }
+    }
+}

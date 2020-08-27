@@ -1,0 +1,20 @@
+// hambergers
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+// BS Base styles
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Variables;
+@import './base/variables';
+
+// Base
+@import './base/fonts', './base/base', './base/typography';
+
+// Elements
+@import './elements/buttons', './elements/inputs', './elements/links', './elements/lists';
+
+// Components
+@import './components/cards', './components/forms', './components/mainmenu', './components/logo', './components/metamenu';
+
+
+@import './layouts/page', './layouts/header', './layouts/footer'

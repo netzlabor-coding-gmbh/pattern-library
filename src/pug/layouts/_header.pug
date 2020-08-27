@@ -1,0 +1,14 @@
+.l-header(x-data="scrollToReveal()" @scroll.window="scroll()" :class="{'l-header--fixed': sticky, 'l-header--fixed l-header--hidden': stickyHidden  }" x-ref="header")
+	.l-header__container
+		.l-header__row
+			.l-header__logo
+				include ../components/_logo
+			.l-header__hamburger
+				.hamburger.hamburger--spin
+					.hamburger-box
+						.hamburger-inner
+			.l-header__metamenu
+				include ../components/_metamenu
+			.l-header__mainmenu
+				include ../components/_mainmenu
+			.l-header__search

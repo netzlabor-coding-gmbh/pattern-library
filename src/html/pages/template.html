@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Template</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="/css/styles.min.css">
+		<script defer src="/js/scripts.min.js"></script>
+	</head>
+	<body>
+		<header class="page__header">
+			<div class="l-header" x-data="scrollToReveal()" @scroll.window="scroll()" :class="{'l-header--fixed': sticky, 'l-header--fixed l-header--hidden': stickyHidden  }" x-ref="header">
+				<div class="l-header__container">
+					<div class="l-header__row">
+						<div class="l-header__logo"><a class="c-logo" href="/"><span>nl.academy</span></a></div>
+						<div class="l-header__hamburger">
+							<div class="hamburger hamburger--spin">
+								<div class="hamburger-box">
+									<div class="hamburger-inner"></div>
+								</div>
+							</div>
+						</div>
+						<div class="l-header__metamenu">
+							<div class="c-metamenu">
+								<div class="c-metamenu__links"><a href="#">Files</a><a href="#">Blog</a></div>
+								<div class="c-metamenu__language"><a class="is-active" href="#">EN</a><a href="#">DE</a></div>
+							</div>
+						</div>
+						<div class="l-header__mainmenu">
+							<div class="c-mainmenu">
+								<div class="c-mainmenu__meta"></div>
+								<ul class="c-mainmenu__list">
+									<li class="c-mainmenu__item"><a class="c-mainmenu__link c-mainmenu__link--is-active" href="#">Home</a></li>
+									<li class="c-mainmenu__item"><a class="c-mainmenu__link" href="#">Samples</a></li>
+									<li class="c-mainmenu__item"><a class="c-mainmenu__link" href="#">About</a></li>
+									<li class="c-mainmenu__item"><a class="c-mainmenu__link" href="#">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="l-header__search"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page__main" style="height: 200vh"></main>
+		<footer class="page__footer"></footer>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+a {
+    color: $primary;
+
+    &:hover {
+        color: $secondary;
+        text-decoration: none;
+    }
+
+    &.is-active {
+        color: $secondary;
+    }
+}

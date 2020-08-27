@@ -1,0 +1,11 @@
+extends ../config/_default
+
+block variables
+	- const title = "Template"
+
+block content
+	header.page__header
+		include ../layouts/_header
+	main.page__main(style="height: 200vh")
+
+	footer.page__footer

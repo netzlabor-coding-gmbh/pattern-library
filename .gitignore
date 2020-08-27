@@ -1,0 +1,9 @@
+src/css/styles.min.css.map
+src/css/styles.min.css
+src/js/scripts.min.js
+
+.DS_Store
+.idea
+.env
+nbproject
+node_modules

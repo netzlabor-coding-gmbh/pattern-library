@@ -1,0 +1,13 @@
+.page {
+    &__header {
+        height: 90px;
+
+        @include media-breakpoint-up(md) {
+            height: 160px;
+        }
+    }
+
+    &__main {}
+
+    &__footer {}
+}

@@ -1,0 +1,9 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.125rem;
+    }
+}
